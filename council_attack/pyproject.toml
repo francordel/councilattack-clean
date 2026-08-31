@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "council-attack"
+description = "CouncilAttack - deliberative multi-model red-teaming pipeline (standalone)"
+requires-python = ">=3.11"
+authors = [
+  {name = "Anonymous"},
+]
+license = "MIT"
+dependencies = [
+    "requests",
+    "PyYAML",
+]
+version = "0.1"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

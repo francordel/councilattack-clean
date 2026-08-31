@@ -1,0 +1,22 @@
+# Never commit run outputs (withheld working-attack corpus) or local state
+results/
+logs/
+**/council_attacks.json
+**/attack_goals.json
+**/llm_evaluation.json
+**/strategy_memory.json
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Local tooling / editor state (never ship in a tarball release)
+.claude/
+.pytest_cache/
+.ruff_cache/
+
