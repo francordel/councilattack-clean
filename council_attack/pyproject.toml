@@ -7,7 +7,13 @@ name = "council-attack"
 description = "CouncilAttack - deliberative multi-model red-teaming pipeline (standalone)"
 requires-python = ">=3.11"
 authors = [
-  {name = "Anonymous"},
+  {name = "Francisco J. Cortés-Delgado"},
+  {name = "Mario Rodríguez Béjar"},
+  {name = "Giulio Zizzo"},
+  {name = "William F. Shen"},
+  {name = "Antonio Skarmeta"},
+  {name = "Stefano Braghin"},
+  {name = "Jose L. Hernandez-Ramos"},
 ]
 license = "MIT"
 dependencies = [

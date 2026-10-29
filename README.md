@@ -1,10 +1,12 @@
-# CouncilAttack - Anonymized Artifact
+# CouncilAttack
 
 Reproducibility artifact for the paper *CouncilAttack: Red Teaming LLMs with a
-Deliberative Council over Fabricated Multi-Turn Dialogues* (double-blind
-submission).
+Deliberative Council over Fabricated Multi-Turn Dialogues*, presented at the
+Trustworthy AI for Good (AI4GOOD) Workshop at NeurIPS 2026.
 
-This repository is released for peer review. It contains the council attack
+Authors: Francisco J. Cortés-Delgado, Mario Rodríguez Béjar, Giulio Zizzo, William F. Shen, Antonio Skarmeta, Stefano Braghin, Jose L. Hernandez-Ramos.
+
+This repository contains the council attack
 pipeline (one module per stage), the per-role system prompts, the judge rubric,
 the 50-behaviour representative HarmBench subset, and a self-contained runner -
 no external framework is required.
@@ -106,7 +108,7 @@ excluded, not counted as failures.
 
 **Determinism.** Pass `--seed` to thread a decoding seed into every model call.
 Servers honour it best-effort only and per-role temperatures are > 0, so runs
-still vary; the paper reports the mean over N runs.
+still vary between runs.
 
 ## Tests
 
@@ -121,4 +123,15 @@ require no network access.
 
 ## License
 
-Released for peer review under the MIT License (see `LICENSE`).
+Released under the MIT License (see `LICENSE`).
+
+## Citation
+
+```bibtex
+@inproceedings{cortesdelgado2026councilattack,
+  title     = {CouncilAttack: Red Teaming LLMs with a Deliberative Council over Fabricated Multi-Turn Dialogues},
+  author    = {Cort{\'e}s-Delgado, Francisco J. and Rodr{\'i}guez B{\'e}jar, Mario and Zizzo, Giulio and Shen, William F. and Skarmeta, Antonio and Braghin, Stefano and Hernandez-Ramos, Jose L.},
+  booktitle = {Trustworthy AI for Good (AI4GOOD) Workshop at NeurIPS 2026},
+  year      = {2026}
+}
+```
